@@ -1,8 +1,9 @@
 const express = require('express');
-const app = express();
 const port = 3000;
-app.get('/',(req,res)=>{
-	res.send('Contact domain administrator on +2348188209365 for more info');
-});
+const app = express();
 
-app.listen(port, ()=>console.log(`Server running on port ${port}!`));
+app.get('/',(req,res)=>{
+	res.send("This domain is not for sale. Call or text +2348188209365 if you have the nerve to change my mind");
+} );
+
+app.listen(port,()=>console.log(`Server running on port ${port}!));
