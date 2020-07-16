@@ -11,6 +11,7 @@ app.get("/", (req, res) => {
 app.get("/custom", (req, res) => {
 	res.set("X-Custom", "Custom Header");
 	res.status(418);
+	res.send("Here is a custom page");
 });
 
 app.listen(port, () => console.log(`Server running on port ${port}!`));
